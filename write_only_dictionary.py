@@ -1,3 +1,4 @@
+
 """
     Copyright info can be found in LICENSE.txt or
     at the end of this document.
@@ -99,7 +100,7 @@ class WriteOnlyDictionary:
         if not self.does_contain(old_key):
             t = type(old_key)
             raise self.KeyNotFound("`{}` of {} is not in constant store.".format(old_key, t))
-        
+        #
         
         value = self.STORE.get_value(old_key)
         
